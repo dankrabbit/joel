@@ -8,9 +8,12 @@ body {
 h1 {
 	color: #ff6600;
 	text-shadow: 3px 3px #000000;
+	font-size: 50px
 }
 
-h2 {
+table {
+	width: 340px;
 	color: #ff6600;
 	text-shadow: 3px 3px #000000;
+	font-size: 30px
 }
