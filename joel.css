@@ -1,0 +1,16 @@
+body {
+	background-image: url("ocean.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h1 {
+	color: #ff6600;
+	text-shadow: 3px 3px #000000;
+}
+
+h2 {
+	color: #ff6600;
+	text-shadow: 3px 3px #000000;
+}
