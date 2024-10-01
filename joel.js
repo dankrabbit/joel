@@ -21,6 +21,16 @@ setInterval(() => {
 
 	spd = Math.max(round(spd - 0.05, 2), 0);
 
+	if (spd > 150) {
+		document.getElementById("title").textContent = "JOELEST!!!";
+	} else if (spd > 69) {
+		document.getElementById("title").textContent = "Joeler!";
+	} else if (spd > 0) {
+		document.getElementById("title").textContent = "Joeling...";
+	} else {
+		document.getElementById("title").textContent = "Click Joel to Joel";
+	}
+
 	let txt = Math.round(spd) == spd && spd + ".00" || round(spd, 1) == spd && spd + "0" || spd
 	document.getElementById("speed").textContent = txt;
 }, 16);
