@@ -1,7 +1,7 @@
 let ang = 0;
 let spd = 0;
 
-let click = new Audio("pop.mp3");
+let click = new Audio("content/pop.mp3");
 
 function spin() {
 	let snd = click.cloneNode(true);
