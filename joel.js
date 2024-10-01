@@ -19,7 +19,7 @@ setInterval(() => {
 	ang += Math.min(spd, 150);
 	document.querySelector(".joel").style.transform = `rotate(${ang}deg)`;
 
-	spd = Math.max(round(spd - 0.05, 2), 0);
+	spd = Math.max(round(spd - 0.02, 2), 0);
 
 	if (spd > 150) {
 		document.getElementById("title").textContent = "JOELEST!!!";
