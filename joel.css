@@ -9,10 +9,14 @@ body {
 	overflow: hidden;
 }
 
+body::-webkit-scrollbar {
+	display: none;
+}
+
 h1 {
 	color: #ff6600;
 	text-shadow: 3px 3px #000000;
-	font-size: 240%
+	font-size: 240%;
 }
 
 img {
@@ -26,8 +30,9 @@ img {
 }
 
 table.imgTbl {
-	height: 60%;
+	height: 69%;
 	text-align: center;
+	overflow: hidden;
 }
 
 table.speed {
