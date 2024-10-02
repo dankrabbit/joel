@@ -2,23 +2,27 @@
 <html lang="en-US">
 	<head>
 		<title>Joel</title>
-		<script src="joel.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<link rel="stylesheet" href="joel.css">
+		<script src="joel.js"></script>
 	</head>
-	<body>
+	<body bgcolor="black">
+		<br>
 		<div align="center">
-			<br><br>
 			<h1 id="title">Click Joel To Joel</h1>
-			<br><br><br><br><br>
-			<img class="joel" onclick="spin()" src="content/joel.png">	
-			<br><br><br><br><br><br><br>
-			<table>
-				<tr>
-					<td align=left>Speed:</td>
-					<td align=right><span id="speed">0</span></td>
-					<td align=right>RPM</td>
-				</tr>
+			<table class="imgTbl">
+				<tr><td>
+					<img class="joel" onclick="spin()" src="content/joel.png">
+				</td></tr>
 			</table>
+			<table class="speed"><tr>
+					<td align="left">Speed:</td>
+					<td align="right"><span id="speed">0</span></td>
+					<td align="right">RPM</td>
+			</tr></table>
 		</div>
+
 	</body>
 </html>
