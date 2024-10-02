@@ -4,17 +4,37 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
+
+	line-height: 80%;
+	overflow: hidden;
 }
 
 h1 {
 	color: #ff6600;
 	text-shadow: 3px 3px #000000;
-	font-size: 50px
+	font-size: 340%
 }
 
-table {
-	width: 340px;
+img {
+	width: 100%;
+	height: auto;
+
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table.imgTbl {
+	height: 60%;
+	text-align: center;
+}
+
+table.speed {
+	height: 10%;
+	width: 30%;
+
 	color: #ff6600;
 	text-shadow: 3px 3px #000000;
-	font-size: 30px
+	font-size: 200%;
 }
