@@ -30,14 +30,14 @@ img {
 }
 
 table.imgTbl {
-	height: 69%;
+	height: 66%;
 	text-align: center;
 	overflow: hidden;
 }
 
 table.speed {
 	height: 10%;
-	width: 30%;
+	width: 240px;
 
 	color: #ff6600;
 	text-shadow: 3px 3px #000000;
