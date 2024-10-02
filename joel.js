@@ -3,6 +3,13 @@ let spd = 0;
 
 let click = new Audio("content/pop.mp3");
 
+const tits = [
+	"Click Joel To Joel",
+	"Joeling...",
+	"Joeler!",
+	"JOELEST!!!"
+];
+
 function spin() {
 	let snd = click.cloneNode(true);
 	snd.volume = 0.42;
@@ -17,20 +24,15 @@ function round(i,digits) {
 
 setInterval(() => {
 	ang += Math.min(spd, 150);
-	document.querySelector(".joel").style.transform = `rotate(${ang}deg)`;
+
+	let joel = document.querySelector(".joel");
+	joel.style.transform = `rotate(${ang}deg)`;
 
 	spd = Math.max(round(spd - 0.02, 2), 0);
 
-	if (spd > 150) {
-		document.getElementById("title").textContent = "JOELEST!!!";
-	} else if (spd > 69) {
-		document.getElementById("title").textContent = "Joeler!";
-	} else if (spd > 0) {
-		document.getElementById("title").textContent = "Joeling...";
-	} else {
-		document.getElementById("title").textContent = "Click Joel to Joel";
-	}
+	let tit = document.getElementById("title")
+	tit.textContent = spd > 150 && tits[3] || spd > 69 && tits[2] || spd > 0 && tits[1] || tits[0]
 
-	let txt = Math.round(spd) == spd && spd + ".00" || round(spd, 1) == spd && spd + "0" || spd
-	document.getElementById("speed").textContent = txt;
+	let rpm = Math.round(spd) == spd && spd + ".00" || round(spd, 1) == spd && spd + "0" || spd
+	document.getElementById("speed").textContent = rpm;
 }, 16);
